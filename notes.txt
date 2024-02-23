@@ -1,0 +1,22 @@
+#  )))))))))))) to run mongo db container 
+docker run mongo   <!-- this will run and fload the terminal -->
+docker run -d --name mongoDB mongo  <!-- better way to run it in detached mode -->
+docker container inspect mongoDb             <!-- inspect the mongo container we started for great commands  -->
+
+under Networking setting you will find "IPAddress": "172.17.0.2",
+eg   'mongodb://172.17.0.2:27017/swfavorites',
+then build the image again
+docker build -t mongodb-app .
+docker run -d -p 3000:4000 --name mongoDbv1 mongodb-app
+# Now we check docker run we see two containers running
+docker ps
+PS Z:\nodes\myTutorials\docker\dockerAppMongoDB> docker ps
+CONTAINER ID   IMAGE         COMMAND                  CREATED              STATUS              PORTS                    NAMES
+2575365b3107   mongodb-app   "docker-entrypoint.s…"   About a minute ago   Up About a minute   0.0.0.0:3000->4000/tcp   mongoDbv1
+6903f4a94373   mongo         "docker-entrypoint.s…"   25 minutes ago       Up 25 minutes       27017/tcp                mongoDb
+PS Z:\nodes\myTutorials\docker\dockerAppMongoDB> 
+
+# from the above we are running two containers mongo container and app container (mongodb-app)
+docker build -t mongodb-app .
+docker run -d -p 4000:80 --name mongoDbv1 mongodb-app
+request at postman

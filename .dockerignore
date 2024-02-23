@@ -1,0 +1,9 @@
+node_modules
+Dockerfile
+.git
+
+# personal
+.env
+/backend.env
+notes.txt
+
