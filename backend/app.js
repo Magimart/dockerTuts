@@ -71,7 +71,7 @@ mongoose.connect(
   // 'mongodb://localhost:27017/swfavorites',
   // 'mongodb://host.docker.internal:27017/swfavorites',
   //to connect to a container on a local machine change docker.internal with IP "IPAddress": "172.17.0.2",
-   'mongodb://172.17.0.2:27017/swfavorites',
+   'mongodb://172.17.0.2:27017/mymongodb',
   { useNewUrlParser: true },
   (err) => {
     if (err) {

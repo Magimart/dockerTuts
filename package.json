@@ -1,0 +1,15 @@
+{
+  "name": "react-express-docker-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Magimart/dockerTuts"
+  },
+  "author": "Magima Felix O/www.magima-store.com",
+  "license": "ISC",
+  "description": "this app takes you through on how to dockerize a react and express app. Letting you run the App on your local machine withiout intalling Nodejs and Mongo database"
+}

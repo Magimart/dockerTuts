@@ -4,6 +4,8 @@ Dockerfile
 
 # personal
 .env
-/backend.env
+backend.env
 notes.txt
+notes
+
 
